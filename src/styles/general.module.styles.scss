@@ -1,0 +1,41 @@
+// this file will imported to all other styling files
+// It contains application level styling which will be reused throughout our application.
+
+// ==============COLOR PALLETTE===================
+// primary colors
+$primary-blue-dark: #336cfb;
+$primary-blue: #507aeabf;
+$primary-blue-light: #acc2fb;
+$primary-blue-very-light: #d5e0fc;
+
+$white: #ffffff;
+$black: #000000;
+$dark-grey: #686868;
+
+//secondary colors
+$very-dark-blue-s1: #353d66;
+$dark-blue-s2: #596292;
+$secondary3-sign-in: #353d66b3;
+$secondary4: #abacb1;
+$secondary5: #d5d6d8;
+$btn-hover: #0c2440;
+
+// use together for background blend mode
+$linear-gradient: linear-gradient(
+  180deg,
+  rgba(0, 0, 0, 0.95) 10.42%,
+  rgba(0, 0, 0, 0) 100%
+);
+
+//VARIABLES & MIXINS
+@mixin transition($property) {
+  transition: $property 100ms ease-out;
+}
+
+// variables
+$font-size: (
+  "extra-small": 11px,
+  "small": 14px,
+  "medium": 16px,
+  "large": 18px,
+);

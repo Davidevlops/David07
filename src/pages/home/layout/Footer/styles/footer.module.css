@@ -1,0 +1,10 @@
+.servicesSection {
+  display: flex;
+  border: 2px solid red;
+  background-color: #507aea;
+  color: #ffffff;
+  margin-top: 4rem;
+  height: 350px;
+  font-family: "Montserrat";
+  line-height: 29px;
+}

@@ -1,0 +1,51 @@
+.section {
+  padding: 2rem 1rem;
+  background-color: #507aea;
+  color: #ffffff;
+}
+
+.section h4 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.numbersContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.numbersContainer h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.numbersContainer span {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 650px) {
+  .numbersContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .section {
+    margin: 3rem 6rem;
+    padding: 3rem 6rem;
+  }
+}
+/*# sourceMappingURL=numbers.module.css.map */

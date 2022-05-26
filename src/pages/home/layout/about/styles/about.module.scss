@@ -1,0 +1,61 @@
+@import "../../../../../styles/general.module.styles.scss";
+
+.aboutSection {
+  padding: 2rem 1rem 0;
+}
+
+.infoContainer {
+  margin-bottom: 30px;
+
+  h5 {
+    font-weight: 600;
+    font-size: 11px;
+    color: $primary-blue-light;
+    margin-bottom: 1rem;
+  }
+
+  p:first-child {
+    color: $dark-blue-s2;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  p:nth-child(2) {
+    color: $secondary5;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and(min-width:650px) {
+  .infoContainer {
+    div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+}
+
+@media screen and(min-width:768px) {
+  .aboutSection {
+    padding: 2rem;
+  }
+  .infoContainer {
+    div {
+      gap: 3rem;
+    }
+  }
+}
+
+@media screen and(min-width:900px) {
+  .aboutSection {
+    padding: 3rem 6rem;
+  }
+}

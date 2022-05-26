@@ -1,0 +1,52 @@
+.partnersWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid purple;
+  padding: 3rem 1rem;
+}
+
+.partners {
+  margin-top: 50px;
+  text-align: center;
+  max-width: 700px;
+}
+
+.partners h1 {
+  color: #353d66;
+}
+
+.partners p {
+  color: #abacb1;
+  margin: 20px auto;
+}
+
+.logoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 3rem;
+}
+
+.logoContainer img {
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (min-width: 650px) {
+  .partnersWrapper {
+    padding: 6rem;
+  }
+}
+/*# sourceMappingURL=partners.module.css.map */

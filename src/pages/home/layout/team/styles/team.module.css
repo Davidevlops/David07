@@ -1,0 +1,36 @@
+.aboutStaff {
+  padding: 2rem 1rem 0;
+}
+
+.servicesSection {
+  border: 2px solid red;
+  padding: 1rem;
+  text-align: center;
+}
+
+.servicesSection h5 {
+  font-weight: 600;
+  font-size: 11px;
+  color: #acc2fb;
+  margin-bottom: 1rem;
+}
+
+.servicesSection h6 {
+  font-weight: 600;
+  font-size: 14px;
+  color: #353d66;
+}
+.logoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  gap: 1rem;
+}

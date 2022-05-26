@@ -1,0 +1,149 @@
+@import "../../../styles/general.module.styles.scss";
+
+@mixin signUpStyles {
+  font-size: map-get($font-size, "extra-small");
+  font-weight: 500;
+  color: $very-dark-blue-s1;
+}
+
+// variables
+$hover-links: rgb(12, 36, 64);
+
+.formContainer {
+  padding: 2rem 1rem;
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+// form header
+.formHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+
+  h5 {
+    font-size: map-get($font-size, "large");
+    font-weight: 400;
+    color: $dark-grey;
+  }
+}
+
+.googleSignUpBtn {
+  @include signUpStyles();
+  margin: 20px 0 5px 0;
+  border: 1.5px solid rgba(51, 108, 251, 1);
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  padding: 7px 0;
+  @include transition(border-color);
+
+  &:hover {
+    border-color: rgb(227, 227, 227);
+  }
+}
+
+.or {
+  margin-bottom: 5px;
+  font-size: map-get($font-size, "extra-small");
+  color: $dark-grey;
+}
+
+.signUpWithDetails {
+  @include signUpStyles();
+}
+
+// form element styling
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: $dark-blue-s2;
+  font-family: "Montserrat", sans-serif;
+  font-size: map-get($font-size, "medium");
+}
+
+input {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  background-color: rgba(245, 245, 245, 1);
+  color: $dark-blue-s2;
+  padding: 10px;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.termsOfService {
+  font-family: "Montserrat", sans-serif;
+  font-size: map-get($font-size, "extra-small");
+  margin-bottom: 10px;
+  font-weight: 500;
+  word-spacing: 2px;
+  line-height: 1.5;
+  color: $very-dark-blue-s1;
+
+  a {
+    color: rgba(51, 108, 251, 1);
+    font-weight: 600;
+    @include transition(color);
+
+    &:hover {
+      color: $hover-links;
+    }
+  }
+}
+
+.signUpBtn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  background-color: rgba(51, 108, 251, 1);
+  color: #ffffff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 10px;
+  @include transition(background-color);
+
+  &:hover {
+    background-color: $btn-hover;
+  }
+}
+
+.loginInstead {
+  text-align: center;
+
+  a {
+    font-family: "Montserrat", sans-serif;
+    font-size: map-get($font-size, "extra-small");
+    color: rgba(51, 108, 251, 1);
+    @include transition(color);
+
+    &:hover {
+      color: $hover-links;
+    }
+  }
+}
+
+// media screens
+@media screen and(min-width:768px) {
+  .formContainer {
+    padding: 20px 50px;
+    max-width: 550px;
+  }
+
+  .signUpBtn {
+    margin-bottom: 20px;
+  }
+}

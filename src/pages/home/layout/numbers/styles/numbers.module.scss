@@ -1,0 +1,43 @@
+@import "../../../../../styles/general.module.styles.scss";
+
+.section {
+  padding: 2rem 1rem;
+  background-color: $primary-blue-dark;
+  color: $white;
+
+  h4 {
+    text-align: center;
+    font-weight: 700;
+  }
+}
+
+.numbersContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+  margin-top: 50px;
+
+  h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  span {
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .numbersContainer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media screen and(min-width:900px) {
+  .section {
+    margin: 3rem 6rem;
+    padding: 3rem 6rem;
+  }
+}

@@ -1,0 +1,15 @@
+// import registration component styling since components apperance and the classes used in the Login component are the same
+// add custom styles for classes that are different from the registration component
+
+@import "registration.module.scss";
+
+.forgotPassword {
+  font-family: "Montserrat", sans-serif;
+  font-size: map-get($font-size, "extra-small");
+  align-self: flex-end;
+  margin-bottom: 30px;
+
+  &:hover {
+    color: $hover-links;
+  }
+}
