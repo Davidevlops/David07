@@ -4,6 +4,7 @@ import navBarStyles from "../styles/navbar.module.css";
 import { ReactComponent as Logo } from "../../../../../assets/logo.svg";
 import { ReactComponent as ArrowDown } from "../../../../../assets/chevron-down.svg";
 import { ReactComponent as MenuBtn } from "../../../../../assets/menu.svg";
+import { ReactComponent as SecondArrowDown } from "../../../../../assets/vron-down.svg";
 
 function Navbar() {
   // hides or show menu
@@ -43,8 +44,8 @@ function Navbar() {
 
           <div className={navBarStyles.dropdown}>
             <div className={navBarStyles.dropdownNav}>
-              <button className={navBarStyles.dropdownBtn}>SERVICES</button>
-              <ArrowDown className={navBarStyles.arrowDown} />
+              <button className={navBarStyles.dropdownBtnb}>SERVICES</button>
+              <SecondArrowDown className={navBarStyles.arrowDown} />
             </div>
 
             <div className={navBarStyles.dropdownMenu}>
@@ -57,8 +58,14 @@ function Navbar() {
           <a href="#">ABOUT</a>
 
           <div className={navBarStyles.authentication}>
-            <a href="#login">LOGIN</a>
-            <a href="#login">REGISTER</a>
+            <a
+              style={{ color: "#ffffff" }}
+              className={navBarStyles.insidebox}
+              href="#login"
+            >
+              LOGIN
+            </a>
+            {/* <a href="#login">REGISTER</a> */}
           </div>
         </div>
       </nav>

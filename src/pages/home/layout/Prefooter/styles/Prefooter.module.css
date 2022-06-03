@@ -23,7 +23,7 @@
 .dodo {
   background: #353d66;
   border-radius: 0px 100px 100px 0px;
-  height: 30px;
+  height: 40px;
   color: #ffffff;
   width: 15%;
   font-family: "Montserrat";
@@ -44,14 +44,14 @@
   text-align: center;
   gap: 50px;
   margin-top: 30px;
-  background-color: #507aea;
+  /* background-color: #507aea; */
   height: 240px;
 }
-input {
+.field {
   border: none;
   outline: none;
   border-radius: 100px 0px 0px 100px;
-  height: 30px;
+  height: 40px;
   width: 20%;
   background-color: whitesmoke;
   color: #596292;

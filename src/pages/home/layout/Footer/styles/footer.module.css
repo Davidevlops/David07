@@ -1,10 +1,52 @@
-.servicesSection {
+.container {
   display: flex;
   border: 2px solid red;
   background-color: #507aea;
   color: #ffffff;
   margin-top: 4rem;
-  height: 350px;
+  height: 450px;
   font-family: "Montserrat";
-  line-height: 29px;
+  word-break: break-word;
+}
+.head {
+  margin: 2em 0 0 3em;
+  width: 15em;
+}
+.head1 {
+  margin: 2em 0 0 8em;
+  line-height: 3em;
+}
+.log {
+  font-size: 1.5em;
+}
+.word {
+  word-wrap: break-word;
+}
+.sp {
+  margin: 2em 0 0 0;
+  line-height: em;
+}
+.sub {
+  background-color: #353d66;
+  border: none;
+  color: #ffffff;
+  width: 40%;
+  height: 30px;
+  font-family: "Montserrat";
+  border-radius: 5px;
+  position: relative;
+  top: -2em;
+}
+@media screen and (max-width: 300px) {
+  .container {
+    display: flex;
+    border: 2px solid red;
+    background-color: #507aea;
+    color: #ffffff;
+    margin-top: 4rem;
+    height: 450px;
+    font-family: "Montserrat";
+    word-break: break-word;
+    font-size: 2px;
+  }
 }

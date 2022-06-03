@@ -18,7 +18,7 @@ function Home() {
       <Introduction />
       {/* <Header /> */}
       <About />
-      <OurServices />
+      {/* <OurServices david="big head guy" /> */}
       <Testimonial />
       <Numbers />
       <Team />

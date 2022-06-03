@@ -7,18 +7,20 @@
 
 .introWrapper h1 {
   font-weight: 700;
+  color: #213468;
 }
 
 .introWrapper p {
   margin: 30px auto;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.5;
-  max-width: 300px;
+  max-width: 400px;
+  color: #213468;
 }
 
 .introButton {
   border: none;
-  background-color: #336cfb;
+  background-color: #507aea;
   color: #ffffff;
   padding: 15px 40px;
   border-radius: 5px;
