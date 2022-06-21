@@ -1,12 +1,21 @@
 .container {
   display: flex;
-  border: 2px solid red;
+  padding-left: 15px;
+ 
+  
   background-color: #507aea;
   color: #ffffff;
+<<<<<<< HEAD
+  margin-top: 1rem;
+  height: 350px;
+  font-family: "Montserrat";
+ 
+=======
   margin-top: 4rem;
   height: 450px;
   font-family: "Montserrat";
   word-break: break-word;
+>>>>>>> a9513d6e09de025f9aa650506922a5e9a654dca0
 }
 .head {
   margin: 2em 0 0 3em;
@@ -19,6 +28,10 @@
 .log {
   font-size: 1.5em;
 }
+<<<<<<< HEAD
+
+
+=======
 .word {
   word-wrap: break-word;
 }
@@ -26,6 +39,7 @@
   margin: 2em 0 0 0;
   line-height: em;
 }
+>>>>>>> a9513d6e09de025f9aa650506922a5e9a654dca0
 .sub {
   background-color: #353d66;
   border: none;
@@ -35,6 +49,21 @@
   font-family: "Montserrat";
   border-radius: 5px;
   position: relative;
+<<<<<<< HEAD
+ 
+}
+@media screen and (max-width: 500px) {
+  .container {
+    display: flex;
+   
+    background-color: #507aea;
+    color: #ffffff;
+    margin-top: 1rem;
+    height: 350px;
+    
+    
+    font-size: 10px;
+=======
   top: -2em;
 }
 @media screen and (max-width: 300px) {
@@ -48,5 +77,6 @@
     font-family: "Montserrat";
     word-break: break-word;
     font-size: 2px;
+>>>>>>> a9513d6e09de025f9aa650506922a5e9a654dca0
   }
 }

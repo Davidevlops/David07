@@ -1,0 +1,34 @@
+@import "../../../../../styles/general.module.styles.scss";
+
+.introWrapper {
+  color: $white;
+  text-align: center;
+  z-index: 2;
+  margin-top: 100px;
+
+  h1 {
+    font-weight: 700;
+  }
+
+  p {
+    margin: 30px auto;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 300px;
+  }
+}
+
+.introButton {
+  border: none;
+  background-color: $primary-blue-dark;
+  color: $white;
+  padding: 15px 40px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  @include transition(all);
+
+  &:hover {
+    background-color: $btn-hover;
+  }
+}

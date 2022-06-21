@@ -28,6 +28,8 @@ function About() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, sodales
             nunc augueulla mi eu nunc lorem. Cras sodales henricies
           </p> */}
+<<<<<<< HEAD
+=======
         </div>
         <img
           className={aboutStyles.image}
@@ -43,8 +45,21 @@ function About() {
             bibendum id lorem quis malesuad nisl, et viverra sodales. Vestibulum
             quam sed
           </p>
+>>>>>>> a9513d6e09de025f9aa650506922a5e9a654dca0
         </div>
+        <img
+          className={aboutStyles.image}
+          src={require("../../../../assets/what-we-do.png")}
+          alt="img"
+        />
       </div>
+<<<<<<< HEAD
+     
+      
+        
+       
+    
+=======
       <div className={aboutStyles.container_of_containers}>
         <WhatWeDoCard>
           <div className={aboutStyles.inside_boxContainer}>
@@ -143,6 +158,7 @@ function About() {
           </div>
         </WhatWeDoCard>
       </div>
+>>>>>>> a9513d6e09de025f9aa650506922a5e9a654dca0
     </section>
   );
 }

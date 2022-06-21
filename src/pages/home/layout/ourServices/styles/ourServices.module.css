@@ -1,11 +1,11 @@
 .servicesSection {
-  border: 2px solid red;
+  padding-top: 35px;
   padding: 1rem;
   text-align: center;
 }
 
 .servicesSection h5 {
-  font-weight: 600;
+  font-weight: 800;
   font-size: 11px;
   color: #acc2fb;
   margin-bottom: 1rem;
@@ -32,12 +32,12 @@
   -ms-flex-align: center;
   align-items: center;
   gap: 30px;
-  border: 2px solid green;
+ 
 }
 
 .card {
-  border: 2px solid yellow;
-  max-width: 250px;
+ 
+  max-width: 200px;
 }
 
 .card .image img {

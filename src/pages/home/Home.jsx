@@ -17,8 +17,13 @@ function Home() {
       <Navbar />
       <Introduction />
       {/* <Header /> */}
+<<<<<<< HEAD
+     { <About /> } 
+     <OurServices  />
+=======
       <About />
       {/* <OurServices david="big head guy" /> */}
+>>>>>>> a9513d6e09de025f9aa650506922a5e9a654dca0
       <Testimonial />
       <Numbers />
       <Team />

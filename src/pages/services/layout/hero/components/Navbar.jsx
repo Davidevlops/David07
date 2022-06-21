@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import navBarStyles from "../styles/navbar.module.css";
 
-import Logo1  from "../../../../../assets/logo1.jpg";
+import { ReactComponent as Logo } from "../../../../../assets/logo.svg";
 import { ReactComponent as ArrowDown } from "../../../../../assets/chevron-down.svg";
 import { ReactComponent as MenuBtn } from "../../../../../assets/menu.svg";
 import { ReactComponent as SecondArrowDown } from "../../../../../assets/vron-down.svg";
@@ -17,7 +17,7 @@ function Navbar() {
       <nav>
         <div className={navBarStyles.navHeader}>
           <a href="#">
-            <img src ={Logo1} className={navBarStyles.logo} />
+            <Logo className={navBarStyles.logo} />
           </a>
           <MenuBtn className={navBarStyles.menuBtn} onClick={handleClick} />
         </div>

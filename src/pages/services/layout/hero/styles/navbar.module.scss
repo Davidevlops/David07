@@ -1,0 +1,161 @@
+@import "../../../../../styles/general.module.styles.scss";
+
+// variables
+
+.logo {
+  color: $white;
+  height: 6rem;
+  width: 6rem;
+}
+
+.navHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.menuBtn {
+  height: 40px;
+  width: 40px;
+}
+
+header {
+  position: relative;
+}
+
+// menu items
+.menuWrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 20px;
+  left: 0;
+  right: 0;
+  top: -100%;
+  pointer-events: none;
+  padding: 2rem 1rem;
+  @include transition(all);
+
+  a {
+    font-size: 14px;
+    font-weight: 500;
+    color: $white;
+    @include transition(color);
+    &:hover {
+      color: $primary-blue-dark;
+    }
+  }
+}
+
+// displays menu
+.displayMenu {
+  opacity: 1;
+  top: initial;
+  pointer-events: all;
+}
+
+// dropdown
+.dropdown {
+  position: relative;
+}
+
+.dropdownNav {
+  margin-bottom: -6px;
+}
+
+.arrowDown {
+  margin-bottom: -3px;
+}
+
+.dropdownBtn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  background: none;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  color: $white;
+  @include transition(color);
+  &:hover {
+    color: $primary-blue-dark;
+  }
+}
+
+.dropdownMenu {
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: $very-dark-blue-s1;
+  pointer-events: none;
+  opacity: 0;
+  @include transition(all);
+}
+
+// add class to dropdown menu when down arrow is clicked
+.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.authentication {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+// media screen
+@media screen and(min-width:600px) {
+  .menuWrapper {
+    align-items: center;
+  }
+}
+
+@media screen and(min-width:800px) {
+  .menuBtn {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menuWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and(min-width:922px) {
+  nav {
+    padding: 0 2rem;
+  }
+  .authentication {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and( min-width:1024px) {
+  nav {
+    padding: 0 6rem;
+  }
+
+  .menuWrapper {
+    gap: 30px;
+  }
+
+  .authentication {
+    margin-left: 50px;
+  }
+}
